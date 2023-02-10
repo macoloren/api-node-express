@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "9cee03ca-0fc6-4847-84bd-522a76c0ec58",
+		"name": "api-aut-products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21636292"
+	},
+	"item": [
+		{
+			"name": "New Folder",
+			"item": [
+				{
+					"name": "list-la-db",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/products",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "guardando un producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"compu ldlddf\",\r\n    \"category\": \"electronicos\",\r\n    \"price\": 233,\r\n    \"imgURL\": \"adfdsfdgg4f4df6dfg\",\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/products",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": []
+		},
+		{
+			"name": "auth",
+			"item": []
+		}
+	]
+}
