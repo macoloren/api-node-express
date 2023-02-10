@@ -9,8 +9,6 @@ export const createProduct = async (req, res) => {
         const newProduct = new Product({ name, category, price, imgURL });
         const productSaved = await newProduct.save();
 
-        console.log("mesaje de pueba para la rama feature");
-
         res.status(201).json({ message: 'Producto guardado', productSaved })
 
     } catch (error) {
